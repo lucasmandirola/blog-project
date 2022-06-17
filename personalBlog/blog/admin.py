@@ -5,9 +5,9 @@ from .models import Post
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('id', 'image', 'title', 'desc',)
-    list_display_links = ('id', 'title',)
-    list_filter = ('created', 'updated',)
-    search_fields = ('title', 'desc',)
+    list_display = ('id', 'image', 'title', 'desc')
+    list_display_links = ('id', 'title')
+    list_filter = ('created', 'updated')
+    search_fields = ('title', 'desc')
 
-    readonly_fields = ('created', 'updated',)
+    readonly_fields = ('created', 'updated')
